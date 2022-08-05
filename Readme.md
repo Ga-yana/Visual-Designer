@@ -7,7 +7,7 @@ By Ga-yana :desktop_computer:
 
 ## A static landing page of a visual designer.
 
-### Click [here]() to see it live
+### Click [here](https://visualdesigner.netlify.app/) to see it live
 
 ![Homepage](./Images/Screenshot%202022-08-05%20at%2011.37.46%20PM.png)
 ![Homepage](./Images/Screenshot%202022-08-05%20at%2011.42.47%20PM.png)
