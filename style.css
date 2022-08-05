@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding:0 ;
+}
+
+body{
+    background:#111111;
+   color: #ffffff;
+   font-family: "Poppins";
+}
+
+/* header */
+.top{
+    height: 590px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 80px;
+    justify-content: space-around;
+}
+
+.fa-circle-half-stroke{
+    color: #CA1A27;
+}
+.logo-logo{
+    color: #CA1A27;
+    font-size: 28px;
+}
+
+.nav-lists{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 40px;
+    color: #ffffff;
+    margin-left: 300px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.nav-item:hover{
+    color: #CA1A27;
+}
+
+/* flex 1 */
+
+.flex-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 510px;
+    /* height: 450px; */
+}
+
+.flex-1-left img{
+    width: 500px;
+    margin-left: 90px;
+    margin-bottom: 20px;
+   
+}
+.flex-1-right{
+    width: 550px;
+    margin-right: 150px;;
+    margin-top: 160px;
+}
+.name-1{
+    color: #CA1A27;
+    font-size: 18px;
+    font-weight: 600;
+}
+.head-1{
+    font-size: 50px;
+    color: #ffffff;
+}
+.line-1{
+font-size: 17px;
+color: #ffffff;
+font-weight: 300;
+line-height: 23px;
+margin-top: 8px;
+}
+.btn-1{
+    color: #ffffff;
+    background-color: #CA1A27;
+    padding: 15px 40px;
+    border: none;
+    margin-top: 35px;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+.black-box{
+    width: 50vw;
+    height: 120vh;
+    background-color: #181818;
+}
+.flex-2{
+    display: flex;
+    flex-direction: row;
+    margin-left: 230px;
+    margin-right: 230px;
+    gap: 20px;
+}
+.design{
+    height: 350px;
+    padding-left: 50px;
+    background-color: #1E1E1E;
+}
+.fa-calculator, .fa-clipboard,  .fa-ruler-combined{
+    color: #CA1A27;
+    margin-top: 50px;
+}
+.design-topic{
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 35px;
+}
+.know{
+color: #CA1A27;
+font-weight: 600;
+margin-top: 20px;
+}
+.fa-arrow-right{
+    color: #CA1A27; 
+    margin-left: 5px;
+}
+.design-line{
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 17px;
+}
+.design:hover,.know:hover{
+    background-color: #CA1A27;
+}
+ /* .fa-calculator:hover, .fa-clipboard:hover, .fa-ruler-combined:hover{
+    color: #ffffff;
+}
+.know:hover{
+    color:#ffffff;
+} */
+/* how to do this? */
+
+.flex-3{
+    display: flex;
+    flex-direction: row;
+    
+    margin-left: 230px;
+    margin-right: 230px;
+    height: 280px;
+    gap: 25px;
+    margin-top: 100px;
+}
+.twelve{
+  
+    /* width: 305px; */
+    width: 610px;
+    line-height: 65px;
+}
+.number{
+    
+    width: 309px;
+    line-height: 30px;
+    background-color: #1E1E1E;
+}
+.twelve div{
+    color: #CA1A27;
+    font-size: 85px;
+    font-weight: 700;
+    margin-left: 100px;
+    margin-top: 80px;
+}
+.twelve p{
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}
+.number div{
+    color: #CA1A27;
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: 120px;
+    margin-top: 33px;
+}
+.number p{
+    text-align: center;
+}
+.flex-3-mini{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.black{
+    position: relative;
+}
+.black-above{
+    
+    position: absolute;
+    top: 120px;
+}
+
+
+.single-line{
+    display: flex;
+    flex-direction: row;
+    
+    margin: 60px 230px 0 230px;
+    justify-content: space-between;
+    align-items: center;
+}
+.feature{
+    font-family: "Montserrat";
+    font-size: 25px;
+    font-weight: 800;
+}
+.feature-line{
+    font-size: 14px;
+    margin-top: 10px;
+}
+.view{
+    background-color: #CA1A27;
+    color: #ffffff;
+    padding: 0 40px;
+    height: 40px;
+    border: none;
+}
+
+
+.project-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 60px 230px 0 230px;
+    gap: 30px;
+}
+.pic{
+    width: 400px;
+    margin-left: 25px;
+    margin-top: 60px;
+}
+.pic-shadow{
+  
+    width: 450px;
+    height: 380px;
+    background-color:#1E1E1E ;
+}
+.project-name{
+    font-size: 22px;
+    margin-top: 15px;
+}
+.project-know{
+    margin-top: 6px;
+    color: #CA1A27;
+    font-weight: 600;
+}
+
+
+.contact-flex{
+    margin: 100px 230px 0 230px;
+    background-color: #1E1E1E;
+    display: flex;
+    flex-direction: row;
+  
+    min-height: 300px;
+    justify-content:space-between;
+    align-items: center;
+}
+.contact-flex-left{
+    width: 500px;
+   
+   margin-left: 50px;
+}
+.contact-head{
+    font-size: 42px;
+    font-weight: 600;
+}
+.contact-line{
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.contact-flex-right{
+    background-color: #CA1A27;
+    color: #ffffff;
+    padding: 15px 40px;
+    border: none;
+    margin-right: 150px;
+}
+
+
+.single-line-2{
+    margin-top: 100px;
+}
+.nav-lists-2{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    list-style: none;
+    margin-left: 580px;
+}
+
+
+.bottom{
+    height: 13vh;
+    background-color:#1E1E1E ;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+.logo-logo-1{
+    color: #CA1A27;
+    font-size: 28px;
+    margin-left: 180px;
+}
+.right{
+    margin-left: 380px;
+   
+}
+.right i{
+    padding-left: 30px;
+}
