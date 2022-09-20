@@ -22,6 +22,7 @@ body{
     align-items: center;
     height: 80px;
     justify-content: space-around;
+    display: none;
 }
 
 .fa-circle-half-stroke{
@@ -45,6 +46,9 @@ body{
 .nav-item:hover{
     color: #CA1A27;
 }
+.bars{
+    display: none;
+}
 
 /* flex 1 */
 
@@ -53,18 +57,19 @@ body{
     flex-direction: row;
     justify-content: space-around;
     height: 510px;
+    margin: 0 90px 0 150px;
     /* height: 450px; */
 }
 
 .flex-1-left img{
     width: 500px;
-    margin-left: 90px;
+    /* margin-left: 90px; */
     margin-bottom: 20px;
    
 }
 .flex-1-right{
-    width: 550px;
-    margin-right: 150px;;
+    max-width: 550px;
+    /* margin-right: 150px;; */
     margin-top: 160px;
 }
 .name-1{
@@ -135,16 +140,12 @@ margin-top: 20px;
     font-weight: 300;
     margin-top: 17px;
 }
-.design:hover,.know:hover{
+.design:hover{
     background-color: #CA1A27;
 }
- /* .fa-calculator:hover, .fa-clipboard:hover, .fa-ruler-combined:hover{
-    color: #ffffff;
+.design:hover>.fa-calculator, .design:hover>.know, .design:hover>.fa-clipboard ,.design:hover>.fa-ruler-combined{
+   color: #ffffff;
 }
-.know:hover{
-    color:#ffffff;
-} */
-/* how to do this? */
 
 .flex-3{
     display: flex;
@@ -153,17 +154,15 @@ margin-top: 20px;
     margin-left: 230px;
     margin-right: 230px;
     height: 280px;
-    gap: 25px;
+    gap: 18px;
     margin-top: 100px;
 }
 .twelve{
-  
     /* width: 305px; */
-    width: 610px;
+    max-width: 270px;
     line-height: 65px;
 }
 .number{
-    
     width: 309px;
     line-height: 30px;
     background-color: #1E1E1E;
@@ -191,16 +190,14 @@ margin-top: 20px;
     text-align: center;
 }
 .flex-3-mini{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 15px;
 }
 .black{
     position: relative;
 }
 .black-above{
-    
     position: absolute;
     top: 120px;
 }
@@ -233,21 +230,21 @@ margin-top: 20px;
 
 
 .project-flex{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin: 60px 230px 0 230px;
     gap: 30px;
 }
 .pic{
     width: 400px;
-    margin-left: 25px;
-    margin-top: 60px;
+    margin:60px 25px ;
+    /* margin-left: 25px;
+    margin-top: 60px; */
+}
+.pic-4{
+    margin: 80px 25px;
 }
 .pic-shadow{
-  
-    width: 450px;
-    height: 380px;
     background-color:#1E1E1E ;
 }
 .project-name{
@@ -272,8 +269,7 @@ margin-top: 20px;
     align-items: center;
 }
 .contact-flex-left{
-    width: 500px;
-   
+    max-width: 500px;
    margin-left: 50px;
 }
 .contact-head{
@@ -314,6 +310,7 @@ margin-top: 20px;
     display: flex;
     align-items: center;
     margin-top: 40px;
+    justify-content: space-between  ;
 }
 .logo-logo-1{
     color: #CA1A27;
@@ -321,9 +318,176 @@ margin-top: 20px;
     margin-left: 180px;
 }
 .right{
-    margin-left: 380px;
+    margin-right: 180px;
    
 }
 .right i{
     padding-left: 30px;
+}
+
+
+@media screen and (max-width:768px) {
+    .navbar{
+        display: flex;
+        justify-content:space-between;
+        margin: 0 50px 0 50px;
+    }
+    .nav-lists{
+        gap: 25px;
+        margin-left: 0;
+    }
+    .head-1{
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .flex-1{
+        margin: 0 50px 0 50px;
+    }
+    .flex-1-right{
+        margin-top: 0;
+    }
+    .black-box{
+        height: 1250px;
+    }
+    .black-above{
+        top: 80px;
+    }
+    .flex-2{
+        flex-direction: column;
+    }
+    .design{
+        /* width: 280px; */
+        height: 250px;
+    }
+    .design-topic{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .design-line{
+        font-size:18px ;
+    }
+    .fa-calculator, .fa-clipboard,  .fa-ruler-combined{
+        margin-top: 25px;
+    }
+    .flex-3{
+        flex-direction: row;
+        margin: 50px 70px 0 70px;
+        height: 220px;
+    }
+    .flex-3-mini{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .number{
+        width: 150px;
+    }
+    .number p{
+        font-size: 14px;
+    }
+    .number div{
+        margin-left: 50px;
+    }
+    .twelve div{
+        margin-left: 40px;
+    }
+    .single-line{
+        margin: 50px 50px 0 50px;
+        
+    }
+    .contact-flex{
+        flex-direction: column;
+        margin: 60px 70px 0 70px;
+        justify-content: flex-start;
+    }
+    .nav-lists-2{
+        margin-left: 250px;
+    }
+    .project-flex{
+        margin: 60px 70px 0 70px;
+    }
+    .pic{
+        width: 250px;
+        margin: 25px 15px;
+    }
+    .pic-4{
+        margin: 35px 15px;
+    }
+    .contact-flex-left{
+        margin-left: 0;
+    }
+    .contact-head{
+        margin-top: 15px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .contact-line{
+        text-align: center;
+    }
+    .contact-flex-right{
+        margin-top: 35px;
+        margin-right: 0;
+    }
+    .logo-logo-1{
+        margin-left: 50px;
+    }
+    .right{
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width:425px){
+    .black-box{
+        height: 1450px;
+    }
+    .nav-lists{
+        display: none;
+    }
+    .bars{
+        display: flex;
+        color: #ffffff;
+    }
+    .top{
+        height: 670px;
+    }
+    .flex-1{
+        flex-direction: column;
+        margin: 0 50px 0 50px;
+    }
+    .flex-1-left img{
+        width:300px ;
+    }
+    .flex-3{
+        flex-direction: column;
+    }
+    .project-flex{
+        grid-template-columns: 1fr;
+    }
+    .pic{
+        width: 250px;
+    }
+    .nav-lists-2{
+        margin-left: 100px;
+    }
+    .flex-2{
+        margin: 0 70px 0 70px;
+        /* display: none; */
+    }
+    .design{
+      padding-left: 20px;
+      width: 260px;
+    }
+    .single-line{
+        flex-direction: column;
+    }
+    .number{
+        width: 120px;
+    }
+    .number div{
+        font-size: 30px;
+        margin-top: 25px;
+        margin-left: 40px;
+    }
+    .number p{
+        font-size: 12px;
+    }
 }

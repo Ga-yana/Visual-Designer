@@ -6,6 +6,7 @@ By Ga-yana :desktop_computer:
 #
 
 ## A static landing page of a visual designer.
+Tablet and mobile(at 425px) responsive too.
 
 ### Click [here](https://visualdesigner.netlify.app/) to see it live
 
